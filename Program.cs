@@ -26,22 +26,20 @@ while (isValid)
     }
 
     string firstLetterOfName = name.Substring(0, 1).ToUpper();
-    string firstLetterOfSurname = surname.Substring(0, 1).ToUpper();
+    string firstLetterOfSurname = surname.Substring(0, 1).ToUpper(); 
 
 
     // Перевірка на те, чи ім'я та прізвище починаються з однієї літери
     if (firstLetterOfName == firstLetterOfSurname)
     {
-        Console.WriteLine("\nІм'я та прізвище починаються з однієї літери.");
-        isValid = true;
+        Console.WriteLine("\nІм'я та прізвище починаються з однієї літери.");        
         askAgain = true;
     }
 
     if (firstLetterOfName != firstLetterOfSurname)
     {
         Console.WriteLine("\nІм'я та прізвище не починаються з однієї літери.");
-        askAgain = true;
-        isValid = false;
+        askAgain = true;      
     }
 
     // Запит користувача, чи хоче він перевірити ще раз
