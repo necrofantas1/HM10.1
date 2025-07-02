@@ -10,16 +10,16 @@ while (isValid)
     string surname = Console.ReadLine();
 
     string firstLetterOfName = name.Substring(0, 1).ToUpper();
-
     string firstLetterOfSurname = surname.Substring(0, 1).ToUpper();
 
+    // Перевірка на правильність вводу
     if (name.Length < 2 || surname.Length < 2)
     {
         Console.WriteLine("\nІм'я та прізвище повинні містити принаймні 2 символи.");
-        continue; //вертаємося до початку циклу, щоб запитати ім'я та прізвище знову
+        continue; 
     }
 
-    // Якщо ім'я та прізвище валідні,то перевіряємо перші літери
+    
     if (firstLetterOfName == firstLetterOfSurname)
     {
         Console.WriteLine("\nПерше ім'я та прізвище починаються з однієї літери.");
@@ -40,12 +40,12 @@ while (isValid)
             isValid = false;
             Console.WriteLine("Дякуємо за використання програми!");
         }
-
         else if (userAnswer == "y" || userAnswer == "yes")
         {
             Console.Clear();
             isValid = true;
         }
+
         else
         {
             Console.WriteLine("\nНевірний ввід. Будь ласка, введіть 'y' або 'n'.");
