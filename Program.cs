@@ -25,9 +25,8 @@ while (isValid)
         continue;
     }
 
-    string firstLetterOfName = name.Substring(0, 1).ToUpper();
-    string firstLetterOfSurname = surname.Substring(0, 1).ToUpper(); 
-
+    char firstLetterOfName = char.ToUpper(name[0]);
+    char firstLetterOfSurname = char.ToUpper(surname[0]);
 
     // Перевірка на те, чи ім'я та прізвище починаються з однієї літери
     if (firstLetterOfName == firstLetterOfSurname)
